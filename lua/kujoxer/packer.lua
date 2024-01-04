@@ -27,5 +27,7 @@ return require('packer').startup(function(use)
   use("nvim-treesitter/playground")
   -- Harpoon "Прикалывает файлы"
   use("theprimeagen/harpoon")
+  -- Дерево изменений 
+  use("mbbill/undotree")
 
 end)

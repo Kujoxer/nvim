@@ -52,6 +52,25 @@ use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 use("nvim-treesitter/playground")
 ```
 
+### Harpoon
+
+https://github.com/ThePrimeagen/harpoon/tree/harpoon2
+
+```lua
+use {
+    "ThePrimeagen/harpoon",
+    branch = "harpoon2",
+    requires = { {"nvim-lua/plenary.nvim"} }
+}
+```
+
+### Дерево изменений 
+
+https://github.com/mbbill/undotree?tab=readme-ov-file#download-and-install
+
+```lua
+use 'mbbill/undotree'
+```
 
 
 ## Source:
