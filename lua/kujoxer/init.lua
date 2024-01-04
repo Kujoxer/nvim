@@ -1,3 +1,3 @@
 require("kujoxer.remap")
-require("plugins")
-print("hello, kujoxer")
+require("kujoxer.packer")
+print("Kujoxer is here!")

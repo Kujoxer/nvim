@@ -21,6 +21,17 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 - Манеджер плагинов Packer - исправно работает;
 - У нас первоначальная простая структура nvim конфигурации.
 
+## Telescope 
+
+https://github.com/nvim-telescope/telescope.nvim
+
+```lua
+use {
+  'nvim-telescope/telescope.nvim', tag = '0.1.5',
+-- or                            , branch = '0.1.x',
+  requires = { {'nvim-lua/plenary.nvim'} }
+}
+```
 
 Source:
 -- По мотивам thePrimeagen
