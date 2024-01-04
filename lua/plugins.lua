@@ -26,9 +26,6 @@ return require('packer').startup(function(use)
     config = 'vim.cmd[[ALEEnable]]'
   }
 
-  -- Post-install/update hook with neovim command
-  use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
-
   -- Post-install/update hook with call of vimscript function with argument
   use { 'glacambre/firenvim', run = function() vim.fn['firenvim#install'](0) end }
 end)
