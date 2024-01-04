@@ -33,6 +33,24 @@ use {
 }
 ```
 
+## Цветовая схема rose-pine
+
+https://github.com/rose-pine/neovim
+
+```lua
+require('packer').startup(function(use)
+  use({ 
+  'rose-pine/neovim', as = 'rose-pine',
+  config = function()
+    vim.cmd('colorscheme rose-pine')
+    end
+  })
+end)
+```
+
+
+
+
 Source:
 -- По мотивам thePrimeagen
 - https://youtu.be/w7i4amO_zaE?si=NT4aaByC_C-_-p0k
