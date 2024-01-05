@@ -69,7 +69,21 @@ use {
 https://github.com/mbbill/undotree?tab=readme-ov-file#download-and-install
 
 ```lua
-use 'mbbill/undotree'
+use("mbbill/undotree")
+```
+
+### Плагин для Git
+
+https://github.com/tpope/vim-fugitive
+
+```lua
+use("tpope/vim-fugitive")
+```
+
+### Lsp
+
+```lua
+
 ```
 
 
