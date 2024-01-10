@@ -1,36 +1,37 @@
 # Nvim Config
 ## Steps:
 ### После того как 
-
 ```bash
 cd ~/.config;
 git clone git@github.com:Kujoxer/nvim.git;
 ```
-### Сделать
 
+### Сделать
 ```bash
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
         ~/.local/share/nvim/site/pack/packer/start/packer.nvim
-        ```
+```
 ### Затем
-        В nvim редакторе набрать `:PackerInstall`.
+В nvim редакторе набрать `:PackerInstall`.
 
         > В результате должно получиться:
         - Никаких ошибок нету;
         - Манеджер плагинов Packer - исправно работает;
         - У нас первоначальная простая структура nvim конфигурации.
 
+
 ## Plugins install
 ### Telescope 
 
-        https://github.com/nvim-telescope/telescope.nvim
+https://github.com/nvim-telescope/telescope.nvim
 
-        ```lua
+```lua
         use {
             'nvim-telescope/telescope.nvim', tag = '0.1.5',
                 -- or                            , branch = '0.1.x',
                 requires = { {'nvim-lua/plenary.nvim'} }
         }
+
 ```
 
 ### Цветовая схема rose-pine
@@ -65,7 +66,6 @@ use {
 ```
 
 ### Дерево изменений 
-
 https://github.com/mbbill/undotree?tab=readme-ov-file#download-and-install
 
 ```lua
@@ -73,15 +73,13 @@ use("mbbill/undotree")
 ```
 
 ### Плагин для Git
-
 https://github.com/tpope/vim-fugitive
 
 ```lua
 use("tpope/vim-fugitive")
 ```
 
-### Lsp
-
+### Lsp 
 https://github.com/VonHeikemen/lsp-zero.nvim
 
 ```lua
