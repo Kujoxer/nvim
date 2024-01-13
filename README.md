@@ -1,18 +1,26 @@
 # Nvim Config
+
+
+
 ## Steps:
 ### После того как 
+
 ```bash
 cd ~/.config;
 git clone git@github.com:Kujoxer/nvim.git;
+
 ```
 
 ### Сделать
+
 ```bash
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
         ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+
 ```
+
 ### Затем
-В nvim редакторе набрать `:PackerInstall`.
+        В nvim редакторе набрать `:PackerInstall`.
 
         > В результате должно получиться:
         - Никаких ошибок нету;
@@ -26,16 +34,15 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 https://github.com/nvim-telescope/telescope.nvim
 
 ```lua
-        use {
-            'nvim-telescope/telescope.nvim', tag = '0.1.5',
-                -- or                            , branch = '0.1.x',
-                requires = { {'nvim-lua/plenary.nvim'} }
-        }
+use {
+    'nvim-telescope/telescope.nvim', tag = '0.1.5',
+        -- or                            , branch = '0.1.x',
+        requires = { {'nvim-lua/plenary.nvim'} }
+}
 
 ```
 
 ### Цветовая схема rose-pine
-
 https://github.com/rose-pine/neovim
 
 ```lua

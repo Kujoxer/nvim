@@ -1,3 +1,3 @@
-require("kujoxer.remap")
 require("kujoxer.packer")
-print("Kujoxer is here!")
+require("kujoxer.remap")
+require("kujoxer.set")
