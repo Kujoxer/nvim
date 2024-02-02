@@ -1,9 +1,32 @@
-# Nvim Config
+# Почисти систему от старых конфигов nvim, vim
+# Установка nvim в debian 12
+
+#nvim #neovim #vim #install
+➡️ Install neovim
+
+1. УСТАНОВКА
+```shell
+sudo apt install curl git npm;
+mkdir ~/.config;
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
+chmod u+x nvim.appimage```
+
+2. НАСТРОЙКА
+```shell
+./nvim.appimage --appimage-extract
+./squashfs-root/AppRun --version
+
+# Optional: exposing nvim globally.
+sudo mv squashfs-root /
+sudo ln -s /squashfs-root/AppRun /usr/bin/vim```
 
 
+0. В ИТОГЕ nvim как бы vim 🙈
+https://github.com/neovim/neovim/wiki/
 
+# Копирование конфигурации с моего репозитория
 ## Steps:
-### После того как 
+### Раз 
 
 ```bash
 cd ~/.config;
@@ -11,7 +34,7 @@ git clone git@github.com:Kujoxer/nvim.git;
 
 ```
 
-### Сделать
+### Два
 
 ```bash
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
@@ -19,7 +42,7 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 
 ```
 
-### Затем
+### Три
         В nvim редакторе набрать `:PackerInstall`.
 
         > В результате должно получиться:
