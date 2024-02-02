@@ -14,9 +14,10 @@ chmod u+x nvim.appimage```
 2. НАСТРОЙКА
 ```shell
 ./nvim.appimage --appimage-extract
-./squashfs-root/AppRun --version
+./squashfs-root/AppRun --version```
 
-# Optional: exposing nvim globally.
+2.1 Optional: exposing nvim globally.
+```shell 
 sudo mv squashfs-root /
 sudo ln -s /squashfs-root/AppRun /usr/bin/vim```
 
@@ -28,24 +29,19 @@ https://github.com/neovim/neovim/wiki/
 ## Steps:
 ### Раз 
 
-```bash
-cd ~/.config;
-git clone git@github.com:Kujoxer/nvim.git;
-
-```
+```shell
+cd ~/.config
+git clone git@github.com:Kujoxer/nvim.git```
 
 ### Два
 
-```bash
+```shell 
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
-        ~/.local/share/nvim/site/pack/packer/start/packer.nvim
-
-```
+        ~/.local/share/nvim/site/pack/packer/start/packer.nvim```
 
 ### Три
-        В nvim редакторе набрать `:PackerInstall`.
-
-        > В результате должно получиться:
+    В nvim редакторе набрать `:PackerInstall`.
+    В результате должно получиться:
         - Никаких ошибок нету;
         - Манеджер плагинов Packer - исправно работает;
         - У нас первоначальная простая структура nvim конфигурации.
@@ -61,9 +57,7 @@ use {
     'nvim-telescope/telescope.nvim', tag = '0.1.5',
         -- or                            , branch = '0.1.x',
         requires = { {'nvim-lua/plenary.nvim'} }
-}
-
-```
+}```
 
 ### Цветовая схема rose-pine
 https://github.com/rose-pine/neovim
@@ -74,14 +68,15 @@ use({
         config = function()
         vim.cmd('colorscheme rose-pine')
         end
-        })
-```
+        })```
+
+
 ### Nvim-Treesitter для раскраски кода
 
 ```lua
 use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
-use("nvim-treesitter/playground")
-```
+use("nvim-treesitter/playground")```
+
 
 ### Harpoon
 
@@ -92,22 +87,22 @@ use {
     "ThePrimeagen/harpoon",
         branch = "harpoon2",
         requires = { {"nvim-lua/plenary.nvim"} }
-}
-```
+}```
+
 
 ### Дерево изменений 
 https://github.com/mbbill/undotree?tab=readme-ov-file#download-and-install
 
 ```lua
-use("mbbill/undotree")
-```
+use("mbbill/undotree")```
+
 
 ### Плагин для Git
 https://github.com/tpope/vim-fugitive
 
 ```lua
-use("tpope/vim-fugitive")
-```
+use("tpope/vim-fugitive")```
+
 
 ### Lsp 
 https://github.com/VonHeikemen/lsp-zero.nvim
@@ -128,16 +123,13 @@ use {
             {'hrsh7th/cmp-nvim-lsp'},
             {'L3MON4D3/LuaSnip'},
         }
-}
-```
+}```
+
 
 ## Автосохранение по нажатию `Esc`
 
 ```lua 
-vim.cmd('autocmd InsertLeave * write')
-```
-
-
+vim.cmd('autocmd InsertLeave * write')```
 
 
 ## Source:
