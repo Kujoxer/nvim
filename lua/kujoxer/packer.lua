@@ -58,4 +58,25 @@ return require('packer').startup(function(use)
 	  }
   }
 
+
+  -- Comment
+
+  use {
+      'numToStr/Comment.nvim',
+      config = function()
+          require('Comment').setup()
+      end
+  }
+
+
+  -- Prettier
+  use {
+      'prettier/vim-prettier',
+      run = 'yarn install --frozen-lockfile --production',
+      ft = {'javascript', 'typescript', 'css', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'}
+  }
+
+
+
+
 end)

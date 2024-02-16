@@ -36,21 +36,20 @@ git clone git@github.com:Kujoxer/nvim.git```
 ### Два
 
 ```shell 
-git clone --depth 1 https://github.com/wbthomason/packer.nvim\
-        ~/.local/share/nvim/site/pack/packer/start/packer.nvim```
+git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim```
 
 ### Три
     В nvim редакторе набрать `:PackerInstall`.
     В результате должно получиться:
-        - Никаких ошибок нету;
-        - Манеджер плагинов Packer - исправно работает;
-        - У нас первоначальная простая структура nvim конфигурации.
+        1. Никаких ошибок нету;
+        1. Манеджер плагинов Packer - исправно работает;
+        1. У нас первоначальная простая структура nvim конфигурации.
 
 
 ## Plugins install
 ### Telescope 
 
-https://github.com/nvim-telescope/telescope.nvim
+> https://github.com/nvim-telescope/telescope.nvim
 
 ```lua
 use {
@@ -68,7 +67,7 @@ use({
         config = function()
         vim.cmd('colorscheme rose-pine')
         end
-        })```
+})```
 
 
 ### Nvim-Treesitter для раскраски кода
