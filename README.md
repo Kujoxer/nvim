@@ -5,16 +5,18 @@
 #nvim #neovim #vim #install
 
 ## 1. УСТАНОВКА
-```shell
+``` "shell"
 sudo apt install curl git npm;
 mkdir ~/.config;
 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
-chmod u+x nvim.appimage```
+chmod u+x nvim.appimage
+```
 
 ## 2. НАСТРОЙКА
-```shell
+``` "shell"
 ./nvim.appimage --appimage-extract
-./squashfs-root/AppRun --version```
+./squashfs-root/AppRun --version
+```
 
 ## 2.1 Optional: exposing nvim globally.
 ```shell 
