@@ -1,45 +1,45 @@
 # Почисти систему от старых конфигов nvim, vim
-# Установка nvim в debian 12
+# Установка nvim в debian 12 ➡️ Install neovim
+
 
 #nvim #neovim #vim #install
-➡️ Install neovim
 
-1. УСТАНОВКА
+## 1. УСТАНОВКА
 ```shell
 sudo apt install curl git npm;
 mkdir ~/.config;
 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
 chmod u+x nvim.appimage```
 
-2. НАСТРОЙКА
+## 2. НАСТРОЙКА
 ```shell
 ./nvim.appimage --appimage-extract
 ./squashfs-root/AppRun --version```
 
-2.1 Optional: exposing nvim globally.
+## 2.1 Optional: exposing nvim globally.
 ```shell 
 sudo mv squashfs-root /
 sudo ln -s /squashfs-root/AppRun /usr/bin/vim```
 
 
-0. В ИТОГЕ nvim как бы vim 🙈
-https://github.com/neovim/neovim/wiki/
+## 0. В ИТОГЕ nvim как бы vim 🙈
+> https://github.com/neovim/neovim/wiki/
 
-# Копирование конфигурации с моего репозитория
-## Steps:
-### Раз 
+# Копирование конфигурации с этого репозитория
+
+## Раз 
 
 ```shell
 cd ~/.config
 git clone git@github.com:Kujoxer/nvim.git```
 
-### Два
+## Два
 
 ```shell 
 git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim```
 
-### Три
-    В nvim редакторе набрать `:PackerInstall`.
+## Три
+    В nvim редакторе набрать =:PackerInstall=.
     В результате должно получиться:
         1. Никаких ошибок нету;
         1. Манеджер плагинов Packer - исправно работает;
